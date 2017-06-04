@@ -12,6 +12,8 @@ dl
       dt Document:
     div class="col-xs-9"
       dd class="blockquote"
-        a data-toggle="collapse" href="#document" aria-expanded="false" aria-controls="document" show document
+        a href="/configurations/#{@config_file['id']}/document" download
+        == ' | '
+        a data-toggle="collapse" href="#document" aria-expanded="false" aria-controls="document" reveal
         div id="document" class="collapse"
           pre class="force-wrap" #{Base64.strict_decode64(@config_file['document'])}

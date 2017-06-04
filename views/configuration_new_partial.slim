@@ -4,7 +4,7 @@ div id="newConfigurationModal" class="modal fade" role="dialog"
       div class="modal-header"
         h4 New Configuration File
       div class="modal-body"
-        form role="form" action="/accounts/#{@current_account['username']}/projects/#{@project['id']}/configurations" method='post' id='new-configuration-form'
+        form role="form" action="/projects/#{@project['id']}/configurations" method='post' id='new-configuration-form'
           div class="form-group"
             label for='filename_input' File Name:
             input type='text' name='filename' id='filename_input' class="form-control" placeholder="Filename is required"

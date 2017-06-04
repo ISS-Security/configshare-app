@@ -16,6 +16,11 @@ task :rubocop do
   `rubopcop **/*.rb`
 end
 
+desc 'Run in development mode'
+task :run do
+  sh 'rerun -c rackup'
+end
+
 namespace :crypto do
   task :crypto_requires do
     require 'rbnacl/libsodium'

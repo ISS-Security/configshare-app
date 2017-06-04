@@ -12,7 +12,7 @@ table class="table"
     - @projects.each do |proj|
       tr
         td 
-          a href="/account/#{@current_account['username']}/projects/#{proj[:id]}" #{proj[:name]}
+          a href="/projects/#{proj[:id]}" #{proj[:name]}
           td 
             a href="#{proj[:repo_url]}" #{proj[:repo_url]}
 

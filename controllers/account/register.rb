@@ -56,7 +56,7 @@ class ShareConfigurationsApp < Sinatra::Base
 
     if result
       flash[:notice] = 'Please login with your new username and password'
-      redirect '/account/login'
+      redirect '/auth/login'
     else
       flash[:error] = 'Your account could not be created. Please try again'
       redirect '/account/register'

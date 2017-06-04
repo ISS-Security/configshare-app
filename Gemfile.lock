@@ -99,6 +99,8 @@ GEM
       ripl (>= 0.7.0)
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
+    secure_headers (3.6.4)
+      useragent
     sinatra (1.4.8)
       rack (~> 1.5)
       rack-protection (~> 1.4)
@@ -116,6 +118,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.4)
+    useragent (0.16.8)
     webmock (3.0.1)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -139,6 +142,7 @@ DEPENDENCIES
   redis
   redis-rack
   rerun
+  secure_headers
   sinatra
   slim
   tux

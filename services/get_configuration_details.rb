@@ -6,9 +6,9 @@ class GetConfigurationDetails
     @config = config
   end
 
-  def call(auth_token:, project_id:, configuration_id:)
+  def call(auth_token:, configuration_id:)
     response = HTTP.auth("Bearer #{auth_token}")
-                   .get("#{@config.API_URL}/projects/#{project_id}/configurations/#{configuration_id}")
+                   .get("#{@config.API_URL}/configurations/#{configuration_id}")
     response.code == 200 ? extract_configuration_details(response.parse) : nil
   end
 

@@ -4,7 +4,7 @@ div id="newProjectModal" class="modal fade" role="dialog"
       div class="modal-header"
         h4 New Project
       div class="modal-body"
-        form role="form" action="/accounts/#{@current_account['username']}/projects" method='post' id='new-project-form'
+        form role="form" action="/projects" method='post' id='new-project-form'
           div class="form-group"
             label for='name_input' Project Name:
             input type='text' name='name' id='name_input' class="form-control" placeholder="name is required"

@@ -21,7 +21,7 @@ div class="row"
           - @project['configurations'].each do |config_file|
             tr
               td 
-                a href="/accounts/#{@current_account['username']}/projects/#{@project['id']}/configurations/#{config_file['id']}"
+                a href="/configurations/#{config_file['id']}"
                   == "#{config_file['attributes']['filename']}"
               td #{config_file['attributes']['description']}
     div class="row"

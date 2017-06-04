@@ -14,6 +14,7 @@ gem 'slim'
 gem 'dry-validation'
 gem 'rack-ssl-enforcer'
 gem 'rbnacl-libsodium'
+gem 'secure_headers'
 
 # Communication
 gem 'http'
